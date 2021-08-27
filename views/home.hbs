@@ -1,9 +1,18 @@
-<ul >
-  {{#events}}
-    <li>
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
-        <p>{{ location }}</p>
-    </li>
-  {{/events}}
-</ul>
+<table class="table">
+<thead>
+    <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Location</th>
+    </tr>
+    <tbody>
+        {{#events}}
+        <tr>
+            <td scope="row">{{ title }}</td>
+            <td scope="row">{{ description }}</td>
+            <td scope="row">{{ location }}</td>
+        </tr>
+        {{/events}}
+    </tbody>
+</thead>
+</table>
